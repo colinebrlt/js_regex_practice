@@ -20,7 +20,7 @@
     </div>
     <div class="form-example">
       <label for="age">Enter your age: </label>
-      <input type="text" name="name" id="name" required>
+      <input type="text" name="age" id="age" required>
     </div>
     <div class="form-example">
       <label for="email">Enter your email: </label>
@@ -28,7 +28,7 @@
     </div>
     <div class="form-example">
       <label for="email">Confirm your email: </label>
-      <input type="email" name="email-confirmation" id="email-confirmation" required>
+      <input type="email" id="email-confirmation" required>
     </div>
     <div class="form-example">
       <label for="password">Enter your password: </label>
@@ -36,11 +36,15 @@
     </div>
     <div class="form-example">
       <label for="password-confirmation">Confirm your password: </label>
-      <input type="text" name="password" id="password-confirmation" required>
+      <input type="text" id="password-confirmation" required>
     </div>
-    <input type="radio" name="radio" id="radio"> <label for="radio">I agree to the TCU</label>
+    <div>
+      <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+      <label for="checkbox">I agree to TCU</label>
+    </div>
+
     <div class="form-example">
-      <input type="submit" value="Send">
+      <input type="submit" value="Submit" id="submit">
     </div>
   </form>
   
@@ -48,5 +52,9 @@
 </body>
 
 <script src="error_messages.js"></script>
+<script src="email_management.js"></script>
+<script src="age_management.js"></script>
+<script src="tcu_management.js"></script>
+<script src="validations.js"></script>
 
 </html>
