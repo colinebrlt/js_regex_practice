@@ -5,6 +5,7 @@ submitButton.addEventListener('click', (e) => {
   firstNameValidation();
   emailValidation();
   ageValidation();
+  passwordValidation();
   tcuValidation();
 
   const errorsCount = document.getElementsByClassName('error').length;
