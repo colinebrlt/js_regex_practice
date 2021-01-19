@@ -2,6 +2,7 @@ const submitButton = document.getElementById('submit');
 
 submitButton.addEventListener('click', (e) => {
   e.preventDefault();
+  firstNameValidation();
   emailValidation();
   ageValidation();
   tcuValidation();
