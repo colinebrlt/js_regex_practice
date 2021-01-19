@@ -1,4 +1,6 @@
 const firstNameValidation = () => {
+  const firstNameLengthError = document.getElementById('first-name-length-error');
+  if (firstNameLengthError) return;
   const firstNameElmt = document.getElementById('first_name');
   const firstNameInput = firstNameElmt.value;
   if (firstNameInput.length < 3) {

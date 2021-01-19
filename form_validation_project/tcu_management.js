@@ -1,4 +1,6 @@
 const tcuValidation = () => {
+  const tcuAcceptanceError = document.getElementById('tcu-acceptance-error');
+  if (tcuAcceptanceError) return;
   const tcuButtonElmt = document.getElementById('checkbox');
   if (tcuButtonElmt.checked === false) {
     tcuButtonElmt.insertAdjacentHTML('afterend', `<p id='tcu-acceptance-error' class='error' style='color: red;'>${errorMessages.tcu.acceptance}</p>`);
